@@ -1,123 +1,174 @@
-# Farmers-Insurance-QA-Portfolio
-Auto Policy Processing System (APPS) – End-to-End QA Documentation, API Testing, and CI/CD Integration
 # Farmers Insurance – Auto Policy Processing System (APPS)
+
+## Enterprise Insurance QA Portfolio
+
+This repository demonstrates end-to-end Quality Assurance activities performed on the Auto Policy Processing System (APPS) for Farmers Insurance Group (USA).
+
+It covers Manual Testing, API Testing, Documentation, and CI/CD structure aligned with enterprise standards.
+
+---
 
 ## Project Overview
 
-This repository demonstrates end-to-end Quality Assurance implementation for the Auto Policy Processing System (APPS), an enterprise-level automobile insurance Policy Administration System.
+Client: Farmers Insurance Group, USA  
+Domain: US Auto Insurance  
+Application Type: Mainframe (DB2/CICS) integrated with J2EE Web Application (E-Agent)
 
-The system integrates a J2EE-based web application (E-Agent) with legacy CICS/DB2 mainframe systems to support full automobile policy lifecycle processing.
+APPS is responsible for processing automobile insurance policies including:
 
-This portfolio reflects structured QA methodology applied to enterprise insurance systems.
-
----
-
-## Insurance Policy Processing Flow
-
-1. Agent captures customer and vehicle details in E-Agent (Web Application)
-2. System performs policy validation and eligibility checks
-3. Discount validation rules are applied
-4. Rating engine calculates premium
-5. High-risk or exception policies are routed to underwriting
-6. Payment processing is completed
-7. Policy is issued and policy number generated
-
-This repository simulates the above lifecycle from a QA perspective including documentation, traceability, and API validation.
-
----
-
-## Business Scope Covered
-
-APPS supports the following business capabilities:
-
-- New Policy Creation
-- Policy Endorsements (Changes)
+- New Business Policy Creation
 - Policy Validation
 - Discount Validation
-- Premium Rating
-- Underwriting Review (Auto & Manual)
+- Premium Rating Calculation
+- Underwriting Review
 - Payment Processing
 - Policy Issuance
-- Web ↔ Mainframe Integration
 
 ---
 
-## System Architecture Overview
+## Insurance Workflow Covered
 
-The application follows a multi-layer enterprise architecture:
+New Business  
+→ Data Capture  
+→ Policy Validation  
+→ Discount Validation  
+→ Premium Calculation  
+→ Underwriting Review  
+→ Payment Processing  
+→ Policy Issuance  
 
-- J2EE Presentation Layer (E-Agent Web Application)
-- J2EE Business Layer
-- Enterprise Application Integration Layer
-- CICS Mainframe Application
-- DB2 Database
-
-Policy data entered through the web application is processed in the mainframe for validation, rating, underwriting decisions, and final issuance.
+This repository reflects testing coverage across the complete insurance lifecycle.
 
 ---
 
-## QA Coverage in This Repository
+## SDLC – Software Development Life Cycle
 
-This portfolio demonstrates complete QA lifecycle implementation:
+The project followed structured enterprise SDLC phases:
+
+- Requirement Analysis (BRD, SDS)
+- Impact Analysis
+- Development Coordination
+- System Integration Testing (SIT)
+- User Acceptance Testing (UAT) Support
+- Production Validation
+
+Artifacts included:
+- Requirement Documents
+- Design Specifications
+- Test Strategy Documentation
+
+---
+
+## STLC – Software Testing Life Cycle
+
+Testing activities performed:
 
 - Requirement Analysis
-- SDLC Documentation
-- STLC Documentation
-- Test Planning & Strategy
+- Test Planning
+- Test Scenario Preparation
+- Detailed Test Case Design
 - Requirement Traceability Matrix (RTM)
-- Test Scenarios & Detailed Test Cases
-- Test Matrix & Execution Tracking
-- Defect Reporting Framework
+- Test Execution
+- Defect Reporting
 - Test Summary Reporting
-- API Testing using Postman
-- Mock API Collection aligned to Insurance Workflow
-- Environment Configuration
-- CI/CD Ready Repository Structure
 
 ---
 
-## Repository Structure
+## Manual Testing Artifacts Included
 
-```
-01_Project_Overview/
-02_SDLC/
-03_STLC/
-04_Test_Design/
-05_API_Testing/
-06_Test_Execution/
-07_CICD/
-```
+Inside this repository:
 
-Each folder contains structured documentation aligned with enterprise QA and audit standards.
+- Test Plan
+- Requirement Traceability Matrix (RTM)
+- Test Scenarios
+- Detailed Test Cases
+- Test Matrix
+- Defect Report
+- Test Summary Report
+
+All documents are structured according to enterprise QA standards.
+
+---
+
+## API Testing
+
+Tool Used: Postman
+
+APIs Covered:
+
+- Validate Policy API
+- Calculate Premium API
+- Underwriting Review API
+- Process Payment API
+- Issue Policy API
+
+Repository includes:
+
+- Postman Collection
+- Postman Environment File
+- API Test Cases
+- Test Scripts for Response Validation
+- JSON Request/Response Structures
+
+---
+
+## CI/CD Integration
+
+This repository is version-controlled using Git and hosted on GitHub.
+
+CI/CD readiness includes:
+
+- Structured repository layout
+- Artifact version tracking
+- Support for GitHub Actions workflow integration
+- Continuous testing readiness
 
 ---
 
 ## Tools & Technologies
 
-- J2EE Web Application
-- CICS Mainframe
-- DB2 Database
-- Quality Center / Test Director
+- J2EE
+- DB2
+- CICS
+- SQL Server
 - Postman
+- Git
 - GitHub
-- Microsoft Excel & Word (QA Artifacts)
+- Manual Testing Techniques
+- API Testing
 
 ---
 
-## Objective
+## Role & Responsibilities
 
-To demonstrate:
+Role: Lead – Web Testing / Mainframe Integrated Application
 
-- Strong insurance domain knowledge
-- Mainframe + Web integration testing capability
-- Structured QA documentation discipline
-- API validation skills
-- Professional repository organization
-- Readiness for CI/CD integration
+Responsibilities:
+
+- Requirement Analysis
+- Test Planning & Strategy
+- Test Case Design & Review
+- API Testing
+- Defect Management
+- Client Coordination
+- Production Validation Support
 
 ---
 
-## Author
+## Repository Structure
 
-Ram Jandhyala  
-QA Lead  Insurance Domain
+01_Project_Overview  
+02_SDLC  
+03_STLC  
+04_Test_Design  
+05_API_Testing  
+06_Test_Execution  
+07_CICD  
+
+---
+
+## Summary
+
+This portfolio demonstrates enterprise-level QA practices in the Insurance domain, covering complete SDLC and STLC cycles, including documentation, manual testing, API validation, and CI/CD alignment.
+
+It reflects structured testing methodology and real-world project execution standards.
