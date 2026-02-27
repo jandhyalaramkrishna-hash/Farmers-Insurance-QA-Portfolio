@@ -1,0 +1,124 @@
+{
+    "info": {
+        "name": "APPS - Auto Policy Processing System",
+        "_postman_id": "apps-mock-collection-001",
+        "description": "Mock API collection for Auto Policy Processing System (APPS)",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create Quote",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"customerName\": \"John Doe\",\n  \"vehicleType\": \"Sedan\",\n  \"state\": \"CA\"\n}"
+                },
+                "url": {
+                    "raw": "{{base_url}}/createQuote"
+                }
+            }
+        },
+        {
+            "name": "Validate Policy",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"quoteId\": \"Q12345\"\n}"
+                },
+                "url": {
+                    "raw": "{{base_url}}/validatePolicy"
+                }
+            }
+        },
+        {
+            "name": "Calculate Premium",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"quoteId\": \"Q12345\"\n}"
+                },
+                "url": {
+                    "raw": "{{base_url}}/calculatePremium"
+                }
+            }
+        },
+        {
+            "name": "Underwriting Review",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"quoteId\": \"Q12345\",\n  \"riskLevel\": \"High\"\n}"
+                },
+                "url": {
+                    "raw": "{{base_url}}/underwritingReview"
+                }
+            }
+        },
+        {
+            "name": "Process Payment",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"quoteId\": \"Q12345\",\n  \"amount\": 1200\n}"
+                },
+                "url": {
+                    "raw": "{{base_url}}/processPayment"
+                }
+            }
+        },
+        {
+            "name": "Issue Policy",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"quoteId\": \"Q12345\"\n}"
+                },
+                "url": {
+                    "raw": "{{base_url}}/issuePolicy"
+                }
+            }
+        }
+    ]
+}
